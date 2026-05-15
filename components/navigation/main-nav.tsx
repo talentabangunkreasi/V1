@@ -283,22 +283,31 @@ export function MobileNav() {
 
 // Logo component
 export function Logo() {
+  const { isDarkMode } = useAppStore()
+
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.8 }}
       animate={{ opacity: 1, scale: 1 }}
       className="flex items-center gap-3"
     >
-      {/* Mengubah w-10 menjadi w-24 agar menampung logo persegi panjang tanpa memotongnya */}
       <div className="relative w-24 h-10 rounded-xl bg-gradient-to-br from-tech-blue to-tech-purple p-0.5 shadow-lg">
-        <div className="flex size-full items-center justify-center rounded-lg bg-background p-1">
-          {/* Teks "TBK" diganti tag Image dengan object-contain agar logo persegi panjang lu pas secara utuh */}
+        <div 
+          className={`
+            flex size-full items-center justify-center rounded-lg p-1 transition-all duration-500
+            ${isDarkMode 
+              ? 'bg-background' 
+              : 'bg-gradient-to-r from-blue-600 via-blue-500 to-indigo-600'
+            }
+          `}
+        >
           <Image 
             src="logo-pt.png" 
             alt="Logo" 
             width={96} 
             height={40} 
             className="object-contain w-full h-full"
+            priority
           />
         </div>
       </div>
