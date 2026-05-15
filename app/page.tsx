@@ -50,7 +50,7 @@ export default function HomePage() {
           setTimeout(() => {
             window.scrollTo({ top: 0, behavior: 'smooth' })
             setActiveSection('home')
-          }, 2000)
+          }, 400)
 
         }, 300)
 
@@ -117,7 +117,11 @@ export default function HomePage() {
           >
             {/* Background effects */}
             <AnimatedBackground />
-            <FlyingParticles />
+            
+            {/* LANGKAH 2: Partikel melayang disembunyikan di HP (hidden), hanya aktif di desktop (md:block) */}
+            <div className="hidden md:block">
+              <FlyingParticles />
+            </div>
 
             {/* Navigation */}
             <DesktopNav />
