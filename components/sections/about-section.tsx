@@ -25,11 +25,11 @@ const teamMembers = [
 ]
 
 const milestones = [
-  { year: '2014', title: 'Didirikan', description: 'PT Talenta Bangun Kreasi resmi didirikan' },
+  { year: '1999', title: 'Didirikan', description: 'PT Talenta Bangun Kreasi resmi didirikan' },
   { year: '2016', title: '100 Proyek', description: 'Menyelesaikan 100 proyek pertama' },
   { year: '2019', title: 'Ekspansi', description: 'Membuka cabang di 3 kota besar' },
   { year: '2022', title: '500 Proyek', description: 'Mencapai 500 proyek sukses' },
-  { year: '2024', title: 'Inovasi', description: 'Meluncurkan layanan digital' },
+  { year: '2018', title: 'Inovasi', description: 'Meluncurkan layanan digital' },
 ]
 
 const values = [
