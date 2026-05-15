@@ -27,20 +27,39 @@ export default function HomePage() {
     }
   }, [isDarkMode])
 
-  // Scroll to top (home) when intro completes
+  // Scroll to top (home) when intro completes -> DISINI SAKTI NYA DIUBAH BUAT HP
   useEffect(() => {
     if (introComplete) {
-      // Force scroll to top immediately
-      document.documentElement.scrollTop = 0
-      document.body.scrollTop = 0
-      window.scrollTo(0, 0)
-      setActiveSection('home')
-      
-      // Double check after a short delay
-      setTimeout(() => {
+      const isMobile = window.innerWidth <= 768
+
+      if (isMobile) {
+        // 1. Cari section "about" (Tentang Kami) bawaan komponen lu
+        const aboutSection = document.getElementById('about')
+        if (aboutSection) {
+          // 2. Tembak instan ke tentang kami biar layout navbar bawahnya kepres pas sempurna
+          aboutSection.scrollIntoView({ behavior: 'auto' })
+          
+          // 3. Jeda 250ms, langsung scroll balik mulus ke atas (Home) secara otomatis
+          setTimeout(() => {
+            window.scrollTo({ top: 0, behavior: 'smooth' })
+            setActiveSection('home')
+          }, 250)
+        }
+      } else {
+        // Untuk desktop, tetep normal langsung ke atas
         document.documentElement.scrollTop = 0
         document.body.scrollTop = 0
         window.scrollTo(0, 0)
+        setActiveSection('home')
+      }
+      
+      // Double check setelah delay singkat
+      setTimeout(() => {
+        if (!isMobile) {
+          document.documentElement.scrollTop = 0
+          document.body.scrollTop = 0
+          window.scrollTo(0, 0)
+        }
       }, 100)
     }
   }, [introComplete, setActiveSection])
