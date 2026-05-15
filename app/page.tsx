@@ -27,33 +27,42 @@ export default function HomePage() {
     }
   }, [isDarkMode])
 
-  // Scroll to top (home) when intro completes -> DISINI SAKTI NYA DIUBAH BUAT HP
+  // Scroll sequence workaround khusus untuk HP biar navigasi presisi sempurna
   useEffect(() => {
     if (introComplete) {
       const isMobile = window.innerWidth <= 768
 
       if (isMobile) {
-        // 1. Cari section "about" (Tentang Kami) bawaan komponen lu
-        const aboutSection = document.getElementById('about')
-        if (aboutSection) {
-          // 2. Tembak instan ke tentang kami biar layout navbar bawahnya kepres pas sempurna
-          aboutSection.scrollIntoView({ behavior: 'auto' })
-          
-          // 3. Jeda 250ms, langsung scroll balik mulus ke atas (Home) secara otomatis
+        // LANGKAH 1: Langsung mampir instan ke Kontak (contact) di paling bawah
+        const contactSection = document.getElementById('contact')
+        if (contactSection) {
+          contactSection.scrollIntoView({ behavior: 'auto' })
+        }
+
+        // LANGKAH 2: Kasih delay 300ms, lalu pindah instan ke Tentang Kami (about)
+        setTimeout(() => {
+          const aboutSection = document.getElementById('about')
+          if (aboutSection) {
+            aboutSection.scrollIntoView({ behavior: 'auto' })
+          }
+
+          // LANGKAH 3: Kasih delay 400ms lagi biar layout nge-pres total, baru scroll halus ke Home
           setTimeout(() => {
             window.scrollTo({ top: 0, behavior: 'smooth' })
             setActiveSection('home')
-          }, 250)
-        }
+          }, 400)
+
+        }, 300)
+
       } else {
-        // Untuk desktop, tetep normal langsung ke atas
+        // Untuk desktop, langsung normal ke paling atas
         document.documentElement.scrollTop = 0
         document.body.scrollTop = 0
         window.scrollTo(0, 0)
         setActiveSection('home')
       }
       
-      // Double check setelah delay singkat
+      // Double check standar bawaan codingan lu
       setTimeout(() => {
         if (!isMobile) {
           document.documentElement.scrollTop = 0
