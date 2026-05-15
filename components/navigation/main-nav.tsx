@@ -3,7 +3,6 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useAppStore, NAV_ITEMS } from '@/lib/store'
-// HANYA MENAMBAHKAN IMPORT IMAGE SESUAI PERINTAH UNTUK MEMANGGIL PNG
 import Image from 'next/image'
 
 // Nav icons
@@ -282,7 +281,7 @@ export function MobileNav() {
   )
 }
 
-// Logo component - DIUBAH SUEUAI PERINTAH UNTUK MENGGANTI TEKS TBK MENJADI PNG
+// Logo component
 export function Logo() {
   return (
     <motion.div
@@ -290,21 +289,19 @@ export function Logo() {
       animate={{ opacity: 1, scale: 1 }}
       className="flex items-center gap-3"
     >
-      {/* Pembungkus luar, gradient background, dan efek shadow tetap utuh */}
-      <div className="relative size-10 rounded-xl bg-gradient-to-br from-tech-blue to-tech-purple p-0.5 shadow-lg overflow-hidden">
-        {/* Background dalam warna hitam (bg-background) tetap utuh */}
-        <div className="flex size-full items-center justify-center rounded-lg bg-background overflow-hidden">
-          {/* Teks "TBK" lama dihapus, diganti dengan tag Image Next.js */}
+      {/* Mengubah w-10 menjadi w-24 agar menampung logo persegi panjang tanpa memotongnya */}
+      <div className="relative w-24 h-10 rounded-xl bg-gradient-to-br from-tech-blue to-tech-purple p-0.5 shadow-lg">
+        <div className="flex size-full items-center justify-center rounded-lg bg-background p-1">
+          {/* Teks "TBK" diganti tag Image dengan object-contain agar logo persegi panjang lu pas secara utuh */}
           <Image 
             src="logo-pt.png" 
             alt="Logo" 
-            width={40} 
+            width={96} 
             height={40} 
-            className="object-cover w-full h-full"
+            className="object-contain w-full h-full"
           />
         </div>
       </div>
-      {/* Teks nama PT Talenta Bangun Kreasi di sebelah kanan tetap utuh */}
       <div className="hidden sm:block">
         <p className="text-xs font-semibold text-foreground">PT Talenta</p>
         <p className="text-[10px] text-muted-foreground">Bangun Kreasi</p>
