@@ -183,7 +183,7 @@ export function TestimonialSection() {
           {[
             { value: '500+', label: 'Proyek Selesai', icon: ProjectsIcon },
             { value: '98%', label: 'Klien Puas', icon: HappyIcon },
-            { value: '10+', label: 'Tahun Pengalaman', icon: ExperienceIcon },
+            { value: '26+', label: 'Tahun Pengalaman', icon: ExperienceIcon },
             { value: '50+', label: 'Tenaga Ahli', icon: TeamIcon },
           ].map((stat, index) => (
             <motion.div
