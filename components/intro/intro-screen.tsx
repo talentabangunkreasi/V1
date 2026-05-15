@@ -119,23 +119,14 @@ export function IntroScreen() {
               transition={{ duration: 2, repeat: Infinity }}
             />
             
-            {/* Logo container */}
-            <div className="relative size-32 md:size-40 rounded-2xl bg-gradient-to-br from-tech-blue to-tech-purple p-1 shadow-2xl">
-              <div className="flex size-full items-center justify-center rounded-xl bg-bg-darker">
-                <div className="text-center">
-                  <motion.span 
-                    className="block text-3xl md:text-4xl font-bold bg-gradient-to-r from-tech-blue-light to-tech-purple-light bg-clip-text text-transparent"
-                    animate={{ 
-                      textShadow: ['0 0 20px rgba(100,150,255,0.5)', '0 0 40px rgba(150,100,255,0.5)', '0 0 20px rgba(100,150,255,0.5)']
-                    }}
-                    transition={{ duration: 2, repeat: Infinity }}
-                  >
-                    TBK
-                  </motion.span>
-                  <span className="block text-[8px] md:text-[10px] text-tech-blue-light/80 tracking-widest mt-1">
-                    TALENTA
-                  </span>
-                </div>
+            {/* Logo container -> DISINI YANG DIUBAH UNTUK LOGO LONJONG PNG */}
+            <div className="relative w-48 h-28 md:w-56 md:h-32 rounded-2xl bg-gradient-to-br from-tech-blue to-tech-purple p-1 shadow-2xl">
+              <div className="flex size-full items-center justify-center rounded-xl bg-bg-darker p-4">
+                <img 
+                  src="/logo-pt.png" 
+                  alt="Logo PT Talenta Bangun Kreasi" 
+                  className="w-full h-full object-contain"
+                />
               </div>
             </div>
           </motion.div>
