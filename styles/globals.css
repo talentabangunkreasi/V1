@@ -123,3 +123,22 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* ==========================================
+   FIX BUG NAVIGASI HP (DITAMBAHKAN DI BAWAH)
+   ========================================== */
+html, body {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+/* Otomatis maksa komponen navigasi bawah nempel pas di layar HP asli */
+div[class*="fixed"][class*="bottom-0"] {
+  bottom: 0 !important;
+  padding-bottom: calc(env(safe-area-inset-bottom) + 8px) !important;
+}
+
+main, #root, .app {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
