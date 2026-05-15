@@ -128,7 +128,7 @@ export function HomeSection() {
                 className="mb-6 inline-flex items-center gap-2 rounded-full bg-tech-blue/10 px-4 py-2 backdrop-blur border border-tech-blue/20"
               >
                 <span className="size-2 animate-pulse rounded-full bg-tech-blue" />
-                <span className="text-sm text-tech-blue-light">Selamat Datang</span>
+                <span className="text-sm text-tech-blue-light">HAI</span>
               </motion.div>
 
               {/* Main heading */}
@@ -186,7 +186,7 @@ export function HomeSection() {
               >
                 {[
                   { value: '500+', label: 'Proyek Selesai' },
-                  { value: '10+', label: 'Tahun Pengalaman' },
+                  { value: '26+', label: 'Tahun Pengalaman' },
                   { value: '98%', label: 'Klien Puas' },
                 ].map((stat, index) => (
                   <div key={index} className="text-center">
@@ -225,7 +225,7 @@ export function HomeSection() {
             {/* Welcome badge */}
             <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-tech-blue/10 px-3 py-1.5 backdrop-blur border border-tech-blue/20">
               <span className="size-1.5 animate-pulse rounded-full bg-tech-blue" />
-              <span className="text-xs text-tech-blue-light">Selamat Datang</span>
+              <span className="text-xs text-tech-blue-light">HAI</span>
             </div>
 
             {/* Main heading */}
@@ -288,7 +288,7 @@ export function HomeSection() {
           >
             {[
               { value: '500+', label: 'Proyek' },
-              { value: '10+', label: 'Tahun' },
+              { value: '26+', label: 'Tahun' },
               { value: '98%', label: 'Puas' },
             ].map((stat, index) => (
               <div key={index} className="rounded-xl bg-card/50 p-3 text-center backdrop-blur border border-border/30">
