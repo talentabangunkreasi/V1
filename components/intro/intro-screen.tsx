@@ -123,7 +123,7 @@ export function IntroScreen() {
             <div className="relative w-48 h-28 md:w-56 md:h-32 rounded-2xl bg-gradient-to-br from-tech-blue to-tech-purple p-1 shadow-2xl">
               <div className="flex size-full items-center justify-center rounded-xl bg-bg-darker p-4">
                 <img 
-                  src="/logo-pt.png" 
+                  src="logo-pt.png" 
                   alt="Logo PT Talenta Bangun Kreasi" 
                   className="w-full h-full object-contain"
                 />
