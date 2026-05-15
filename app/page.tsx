@@ -50,7 +50,7 @@ export default function HomePage() {
           setTimeout(() => {
             window.scrollTo({ top: 0, behavior: 'smooth' })
             setActiveSection('home')
-          }, 400)
+          }, 900)
 
         }, 300)
 
