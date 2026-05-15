@@ -28,6 +28,7 @@ export const metadata: Metadata = {
   },
 }
 
+// DI SINI YANG GUA UBAH SESUAI PERINTAH: MENGUNCI SKALA VIEWPORT HP
 export const viewport: Viewport = {
   themeColor: [
     { media: '(prefers-color-scheme: light)', color: '#f0f4ff' },
@@ -35,8 +36,8 @@ export const viewport: Viewport = {
   ],
   width: 'device-width',
   initialScale: 1,
-  maximumScale: 5,
-  userScalable: true,
+  maximumScale: 1, // Dikunci ke 1 biar ga bisa zoom in otomatis/liar
+  userScalable: false, // Dikunci false biar ga bisa dicubit goyang-goyang di HP
 }
 
 export default function RootLayout({
