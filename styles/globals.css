@@ -125,28 +125,37 @@
 }
 
 /* ========================================================
-   FIX BUG KELUAR LAYAR KANAN & NAVIGASI KEPOTONG (DI BAWAH)
+   FIX AGRESIF BUGS LAYOUT GESER KANAN & NAVBAR KEPOTONG
    ======================================================== */
 
-/* 1. Kunci paksa html & body biar ga bisa geser ke kanan sama sekali */
+/* 1. Kunci total view horizontal dari level paling atas */
 html, body {
+  width: 100% !important;
   max-width: 100vw !important;
   overflow-x: hidden !important;
-  position: relative;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
-/* 2. Jinakkan layout utama biar ukurannya pas layar HP */
-main, #root, .app, body > div {
+/* 2. Jinakkan elemen canvas 3D atau component pembungkus lainnya agar tidak melar */
+main, #root, .app, __next, canvas, div {
   max-width: 100% !important;
-  overflow-x: hidden !important;
 }
 
-/* 3. Paksa navigasi bawah bener-bener presisi di kiri-kanan layar tanpa offset */
+/* 3. Reset total posisi navigasi bawah agar pas dengan layar HP */
 div[class*="fixed"][class*="bottom-0"] {
   left: 0 !important;
   right: 0 !important;
-  width: 100vw !important;
-  max-width: 100vw !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  transform: none !important; /* Mencegah bug translate-x yang bikin geser */
   box-sizing: border-box !important;
-  padding-bottom: calc(env(safe-area-inset-bottom) + 8px) !important;
+}
+
+/* 4. Pastikan flex/grid item di dalam navigasi bawah terbagi rata dan presisi */
+div[class*="fixed"][class*="bottom-0"] > div {
+  width: 100% !important;
+  max-width: 100% !important;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
 }
