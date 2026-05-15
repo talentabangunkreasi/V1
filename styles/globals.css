@@ -123,3 +123,55 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* ========================================================
+   LANGKAH 1: OPTIMASI RINGAN GPU & KUNCI ANTI-SCROLL NAV
+   ======================================================== */
+
+/* 1. Paksa GPU (Hardware Acceleration) merender efek background & animasi Framer Motion */
+main, 
+canvas, 
+div[class*="animated"], 
+div[class*="particles"],
+footer {
+  will-change: transform, opacity;
+  transform: translateZ(0);
+}
+
+/* 2. Kunci halaman agar tidak bergeser atau melar ke kanan */
+html, body {
+  width: 100% !important;
+  max-width: 100vw !important;
+  overflow-x: hidden !important;
+}
+
+/* 3. Kunci navigasi bawah agar mati total dari scroll horizontal */
+div[class*="fixed"][class*="bottom-0"] {
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+  max-width: 100vw !important;
+  overflow-x: hidden !important;
+  box-sizing: border-box !important;
+}
+
+/* 4. Paksa semua item menu di dalam navigasi membagi lebar rata 20% */
+div[class*="fixed"][class*="bottom-0"] div, 
+div[class*="fixed"][class*="bottom-0"] nav {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+  gap: 4px !important;
+}
+
+div[class*="fixed"][class*="bottom-0"] button,
+div[class*="fixed"][class*="bottom-0"] a {
+  flex: 1 1 0% !important;
+  min-width: 0 !important;
+  text-align: center !important;
+}
