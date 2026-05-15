@@ -3,6 +3,8 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useAppStore, NAV_ITEMS } from '@/lib/store'
+// HANYA MENAMBAHKAN IMPORT IMAGE SESUAI PERINTAH UNTUK MEMANGGIL PNG
+import Image from 'next/image'
 
 // Nav icons
 const NavIcons: Record<string, React.FC<{ className?: string }>> = {
@@ -280,7 +282,7 @@ export function MobileNav() {
   )
 }
 
-// Logo component
+// Logo component - DIUBAH SUEUAI PERINTAH UNTUK MENGGANTI TEKS TBK MENJADI PNG
 export function Logo() {
   return (
     <motion.div
@@ -288,13 +290,21 @@ export function Logo() {
       animate={{ opacity: 1, scale: 1 }}
       className="flex items-center gap-3"
     >
-      <div className="relative size-10 rounded-xl bg-gradient-to-br from-tech-blue to-tech-purple p-0.5 shadow-lg">
-        <div className="flex size-full items-center justify-center rounded-lg bg-background">
-          <span className="text-sm font-bold bg-gradient-to-r from-tech-blue-light to-tech-purple-light bg-clip-text text-transparent">
-            TBK
-          </span>
+      {/* Pembungkus luar, gradient background, dan efek shadow tetap utuh */}
+      <div className="relative size-10 rounded-xl bg-gradient-to-br from-tech-blue to-tech-purple p-0.5 shadow-lg overflow-hidden">
+        {/* Background dalam warna hitam (bg-background) tetap utuh */}
+        <div className="flex size-full items-center justify-center rounded-lg bg-background overflow-hidden">
+          {/* Teks "TBK" lama dihapus, diganti dengan tag Image Next.js */}
+          <Image 
+            src="logo-pt.png" 
+            alt="Logo" 
+            width={40} 
+            height={40} 
+            className="object-cover w-full h-full"
+          />
         </div>
       </div>
+      {/* Teks nama PT Talenta Bangun Kreasi di sebelah kanan tetap utuh */}
       <div className="hidden sm:block">
         <p className="text-xs font-semibold text-foreground">PT Talenta</p>
         <p className="text-[10px] text-muted-foreground">Bangun Kreasi</p>
