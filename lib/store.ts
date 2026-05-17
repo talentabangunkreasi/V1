@@ -124,12 +124,12 @@ export const DUMMY_PRODUCTS: Product[] = [
   },
   {
     id: '3',
-    name: 'Lemari Pakaian Custom',
-    description: 'Lemari pakaian dengan desain custom sesuai kebutuhan dan ukuran ruangan Anda.',
+    name: 'Custom',
+    description: 'Desain custom sesuai kebutuhan dan ukuran ruangan Anda.',
     price: 0,
     category: 'custom-furniture',
-    images: ['/products/wardrobe-1.jpg'],
-    specs: ['Ukuran: Sesuai Pesanan', 'Bahan: Multiplek + HPL', 'Finishing: Duco/HPL', 'Waktu Pengerjaan: 2-3 Minggu']
+    images: ['c1.png'],
+    specs: ['Ukuran: Sesuai Pesanan', 'Bahan: sesuai kesepakatan', 'Finishing: Duco/HPL']
   },
   {
     id: '4',
