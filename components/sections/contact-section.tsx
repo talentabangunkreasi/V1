@@ -182,7 +182,7 @@ export function ContactSection() {
               </div>
               <h3 className="mb-2 font-semibold text-foreground">Lokasi</h3>
               <p className="text-sm text-muted-foreground">
-                Jakarta, Indonesia
+                Jl. Halim Perdana Kusuma No.99, RT.004/RW.004, Batuceper, Kec. Benda, Kota Tangerang, Banten 15122
               </p>
             </div>
 
