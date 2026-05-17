@@ -119,7 +119,7 @@ export const DUMMY_PRODUCTS: Product[] = [
     description: 'Set ruangan makan lengkap, desain elegan dengan material premium.',
     price: 7.7,
     category: 'furniture',
-    images: ['Dua.jpg'],
+    images: ['dua.jpg'],
     specs: ['Ukuran Meja: - cm', 'Bahan: Premium', 'Dengan gaya dark', 'Garansi: 3 Tahun']
   },
   {
