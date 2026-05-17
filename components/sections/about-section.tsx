@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { COMPANY_INFO } from '@/lib/store'
+import Image from 'next/image'
 
 const teamMembers = [
   {
@@ -27,7 +28,7 @@ const teamMembers = [
 const milestones = [
   { year: '1999', title: 'Didirikan', description: 'PT Talenta Bangun Kreasi resmi didirikan' },
   { year: '2016', title: '100 Proyek', description: 'Menyelesaikan 100 proyek pertama' },
-  { year: '2019', title: 'Ekspansi', description: 'Membuka cabang di 3 kota besar' },
+  { year: '2019', title: 'Ekspansi', description: 'menyelesaikan 200 proyek ke 2' },
   { year: '2022', title: '500 Proyek', description: 'Mencapai 500 proyek sukses' },
   { year: '2018', title: 'Inovasi', description: 'Meluncurkan layanan digital' },
 ]
@@ -90,15 +91,15 @@ export function AboutSection() {
             className="relative"
           >
             <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-gradient-to-br from-tech-blue/20 to-tech-purple/20">
-              {/* Placeholder visual */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="mx-auto mb-4 flex size-24 items-center justify-center rounded-2xl bg-gradient-to-br from-tech-blue to-tech-purple shadow-lg">
-                    <span className="text-3xl font-bold text-white">TBK</span>
-                  </div>
-                  <p className="text-sm text-muted-foreground">Foto Perusahaan</p>
-                </div>
-              </div>
+              
+              {/* Image perusahaan menggunakan PNG kamu */}
+              <Image 
+                src="perusahaan.png" 
+                alt="Foto Perusahaan"
+                fill
+                className="object-cover"
+                priority
+              />
               
               {/* Decorative elements */}
               <div className="absolute -right-4 -top-4 size-24 rounded-full bg-tech-blue/20 blur-2xl" />
@@ -150,7 +151,7 @@ export function AboutSection() {
               {[
                 { value: '98%', label: 'Kepuasan Klien' },
                 { value: '50+', label: 'Tenaga Ahli' },
-                { value: '3', label: 'Cabang' },
+                { value: '26+', label: 'Pengalaman' },
               ].map((stat, index) => (
                 <motion.div
                   key={index}
