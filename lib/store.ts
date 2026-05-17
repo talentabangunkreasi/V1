@@ -108,10 +108,10 @@ export const DUMMY_PRODUCTS: Product[] = [
     id: '1',
     name: 'Visual 3D',
     description: 'Interior gambar vs eksekusi',
-    price: 1$,
+    price: 9.9,
     category: 'furniture',
-    images: ['1.jpg'],
-    specs: ['Ukuran: 200x90x85 cm', 'Bahan: Fabric Premium', 'Warna: Abu-abu', 'Garansi: 2 Tahun']
+    images: ['1.jpeg'],
+    specs: ['Ukuran: - cm', 'Bahan: Fabric Premium', 'Warna: - ', 'Garansi: 2 Tahun']
   },
   {
     id: '2',
