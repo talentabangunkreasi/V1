@@ -108,16 +108,16 @@ export const DUMMY_PRODUCTS: Product[] = [
     id: '1',
     name: 'Visual 3D',
     description: 'Interior gambar vs eksekusi',
-    price: 9.9,
+    price: 0,
     category: 'furniture',
-    images: ['/satu.jpg'],
+    images: ['satu.jpg'],
     specs: ['Ukuran: - cm', 'Bahan: Fabric Premium', 'Warna: - ', 'Garansi: 2 Tahun']
   },
   {
     id: '2',
     name: 'Dark ston',
     description: 'Set ruangan makan lengkap, desain elegan dengan material premium.',
-    price: 7.7,
+    price: 0,
     category: 'furniture',
     images: ['dua.jpg'],
     specs: ['Ukuran Meja: - cm', 'Bahan: Premium', 'Dengan gaya dark', 'Garansi: 3 Tahun']
@@ -135,7 +135,7 @@ export const DUMMY_PRODUCTS: Product[] = [
     id: '4',
     name: 'Modern private residence',
     description: 'Ruangan set dengan desain modern, dilengkapi storage optimal.',
-    price: 99,
+    price: 0,
     category: 'custom-furniture',
     images: ['tiga.jpg'],
     specs: ['Ukuran: Sesuai Ruangan', 'Bahan: Multiplek + Granite', 'Fitur: Soft Close', 'Waktu Pengerjaan: -']
@@ -145,15 +145,15 @@ export const DUMMY_PRODUCTS: Product[] = [
     name: 'Renovasi Kamar Mandi',
     description: 'Paket renovasi kamar mandi lengkap dengan desain modern dan material berkualitas.',
     price: 35000000,
-    category: 'custom-house',
-    images: ['/products/bathroom-1.jpg'],
+    category: 'custom',
+    images: ['empat.jpg'],
     specs: ['Luas: Up to 6 m²', 'Termasuk: Material + Jasa', 'Desain: 3D Render', 'Waktu Pengerjaan: 2-3 Minggu']
   },
   {
     id: '6',
     name: 'Konstruksi Rumah Type 45',
     description: 'Paket pembangunan rumah type 45 dengan desain modern minimalis.',
-    price: 350000000,
+    price: 0,
     category: 'custom-house',
     images: ['/products/house-1.jpg'],
     specs: ['Luas Bangunan: 45 m²', 'Lantai: 1 Lantai', '2 Kamar Tidur', 'Waktu Pengerjaan: 4-6 Bulan']
