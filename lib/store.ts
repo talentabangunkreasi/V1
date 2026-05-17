@@ -126,7 +126,7 @@ export const DUMMY_PRODUCTS: Product[] = [
     id: '3',
     name: 'Lemari Pakaian Custom',
     description: 'Lemari pakaian dengan desain custom sesuai kebutuhan dan ukuran ruangan Anda.',
-    price: ,
+    price: 0,
     category: 'custom-furniture',
     images: ['/products/wardrobe-1.jpg'],
     specs: ['Ukuran: Sesuai Pesanan', 'Bahan: Multiplek + HPL', 'Finishing: Duco/HPL', 'Waktu Pengerjaan: 2-3 Minggu']
@@ -135,10 +135,10 @@ export const DUMMY_PRODUCTS: Product[] = [
     id: '4',
     name: 'Modern private residence',
     description: 'Ruangan set dengan desain modern, dilengkapi storage optimal.',
-    price:,
+    price: 99,
     category: 'custom-furniture',
-    images: ['/tiga.jpg'],
-    specs: ['Ukuran: Sesuai Ruangan', 'Bahan: Multiplek + Granite', 'Fitur: Soft Close', 'Waktu Pengerjaan: 3-4 Minggu']
+    images: ['tiga.jpg'],
+    specs: ['Ukuran: Sesuai Ruangan', 'Bahan: Multiplek + Granite', 'Fitur: Soft Close', 'Waktu Pengerjaan: -']
   },
   {
     id: '5',
