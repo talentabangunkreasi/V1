@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useAppStore, DUMMY_PRODUCTS, WHATSAPP_NUMBER, type Product } from '@/lib/store'
+import Image from 'next/image'
 
 type Category = 'all' | 'furniture' | 'custom-furniture' | 'custom-house'
 
@@ -172,20 +173,22 @@ function ProductCard({
       onMouseLeave={() => setIsHovered(false)}
       className="group relative overflow-hidden rounded-2xl bg-card/50 backdrop-blur transition-all hover:shadow-xl hover:shadow-tech-blue/10"
     >
-      {/* Image placeholder */}
+      {/* Image Container */}
       <div className="relative aspect-[4/3] overflow-hidden bg-gradient-to-br from-tech-blue/20 to-tech-purple/20">
-        {/* Placeholder pattern */}
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="text-center">
-            <div className="mx-auto mb-2 flex size-16 items-center justify-center rounded-full bg-card/50">
-              <ProductIcon category={product.category} />
-            </div>
-            <span className="text-xs text-muted-foreground">Gambar Produk</span>
-          </div>
-        </div>
+        
+        {/* Menampilkan gambar asli dari array images store */}
+        {product.images && product.images.length > 0 && (
+          <Image
+            src={product.images[0]}
+            alt={product.name}
+            fill
+            className="object-cover transition-transform duration-500 group-hover:scale-105"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          />
+        )}
         
         {/* Category badge */}
-        <div className="absolute left-3 top-3">
+        <div className="absolute left-3 top-3 z-10">
           <span className="rounded-full bg-card/80 px-3 py-1 text-xs font-medium text-foreground backdrop-blur">
             {categoryLabel}
           </span>
@@ -195,7 +198,7 @@ function ProductCard({
         <motion.div
           initial={false}
           animate={{ opacity: isHovered ? 1 : 0 }}
-          className="absolute inset-0 flex items-center justify-center bg-background/80 backdrop-blur-sm"
+          className="absolute inset-0 z-20 flex items-center justify-center bg-background/80 backdrop-blur-sm"
         >
           <button
             onClick={onBuy}
