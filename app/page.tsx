@@ -155,7 +155,7 @@ function Footer() {
             <div>
               <p className="text-sm font-medium text-foreground">PT Talenta Bangun Kreasi</p>
               <p className="text-xs text-muted-foreground">
-                &copy; {new Date().getFullYear()} PT Talenta Bangun Kreasi. All Rights Reserved. Developed by Hakim.
+                &copy; {new Date().getFullYear()} All Rights Reserved. Developed by Hakim.
               </p>
             </div>
           </div>
