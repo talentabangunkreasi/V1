@@ -115,12 +115,12 @@ export const DUMMY_PRODUCTS: Product[] = [
   },
   {
     id: '2',
-    name: 'Meja Makan Set 6 Kursi',
-    description: 'Set meja makan lengkap dengan 6 kursi, desain elegan dengan material kayu jati pilihan.',
-    price: 12000000,
+    name: 'Monolichit dark ston',
+    description: 'Set ruangan makan lengkap, desain elegan dengan material premium.',
+    price: 7.7,
     category: 'furniture',
-    images: ['/products/dining-1.jpg'],
-    specs: ['Ukuran Meja: 180x90x75 cm', 'Bahan: Kayu Jati', 'Kapasitas: 6 Orang', 'Garansi: 3 Tahun']
+    images: ['Dua.jpg'],
+    specs: ['Ukuran Meja: - cm', 'Bahan: Premium', 'Dengan gaya dark', 'Garansi: 3 Tahun']
   },
   {
     id: '3',
