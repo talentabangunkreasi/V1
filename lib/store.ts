@@ -77,7 +77,7 @@ export const useAppStore = create<AppState>((set) => ({
 }))
 
 // WhatsApp number
-export const WHATSAPP_NUMBER = '6283894214606'
+export const WHATSAPP_NUMBER = '62881012362310'
 
 // Company info
 export const COMPANY_INFO = {
@@ -87,7 +87,7 @@ export const COMPANY_INFO = {
   email: 'talentabangukreasi.gps@gmail.com',
   whatsapp: WHATSAPP_NUMBER,
   social: {
-    instagram: 'https://instagram.com/talentabangunkreasi',
+    instagram: 'https://www.instagram.com/talentabangunkreasi?igsh=eGE5ZjVwZTBncHA5',
     facebook: 'https://facebook.com/talentabangunkreasi',
     tiktok: 'https://tiktok.com/@talentabangunkreasi'
   }
