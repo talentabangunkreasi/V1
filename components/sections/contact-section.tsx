@@ -225,7 +225,7 @@ export function ContactSection() {
                 <span className="absolute -bottom-0.5 -right-0.5 size-3 rounded-full border-2 border-card bg-green-500" />
               </div>
               <div>
-                <h3 className="font-semibold text-foreground">Asisten Virtual TBK</h3>
+                <h3 className="font-semibold text-foreground"> Hans Asisten Virtual TBK </h3>
                 <p className="text-xs text-green-500">Online</p>
               </div>
             </div>
