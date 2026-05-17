@@ -106,11 +106,11 @@ export const NAV_ITEMS = [
 export const DUMMY_PRODUCTS: Product[] = [
   {
     id: '1',
-    name: 'Sofa Modern Minimalis',
-    description: 'Sofa dengan desain modern minimalis, bahan premium dengan kenyamanan maksimal. Cocok untuk ruang tamu modern Anda.',
-    price: 8500000,
+    name: 'Visual 3D',
+    description: 'Interior gambar vs eksekusi',
+    price: 1$,
     category: 'furniture',
-    images: ['/products/sofa-1.jpg'],
+    images: ['1.jpeg'],
     specs: ['Ukuran: 200x90x85 cm', 'Bahan: Fabric Premium', 'Warna: Abu-abu', 'Garansi: 2 Tahun']
   },
   {
