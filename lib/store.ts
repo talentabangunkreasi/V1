@@ -110,7 +110,7 @@ export const DUMMY_PRODUCTS: Product[] = [
     description: 'Interior gambar vs eksekusi',
     price: 1$,
     category: 'furniture',
-    images: ['1.jpeg'],
+    images: ['1.jpg'],
     specs: ['Ukuran: 200x90x85 cm', 'Bahan: Fabric Premium', 'Warna: Abu-abu', 'Garansi: 2 Tahun']
   },
   {
