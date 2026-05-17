@@ -155,7 +155,7 @@ function Footer() {
             <div>
               <p className="text-sm font-medium text-foreground">PT Talenta Bangun Kreasi</p>
               <p className="text-xs text-muted-foreground">
-                &copy; {new Date().getFullYear()} Power by software engginering | Hakim.
+                &copy; {new Date().getFullYear()} Power by software engginering | Hakim
               </p>
             </div>
           </div>
