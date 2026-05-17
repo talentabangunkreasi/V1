@@ -94,7 +94,7 @@ export function AboutSection() {
               
               {/* Image perusahaan menggunakan PNG kamu */}
               <Image 
-                src="perusahaan.png" 
+                src="perusahaan.jpeg.jpeg" 
                 alt="Foto Perusahaan"
                 fill
                 className="object-cover"
