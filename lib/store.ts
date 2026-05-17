@@ -115,7 +115,7 @@ export const DUMMY_PRODUCTS: Product[] = [
   },
   {
     id: '2',
-    name: 'Monolichit dark ston',
+    name: 'Dark ston',
     description: 'Set ruangan makan lengkap, desain elegan dengan material premium.',
     price: 7.7,
     category: 'furniture',
@@ -126,18 +126,18 @@ export const DUMMY_PRODUCTS: Product[] = [
     id: '3',
     name: 'Lemari Pakaian Custom',
     description: 'Lemari pakaian dengan desain custom sesuai kebutuhan dan ukuran ruangan Anda.',
-    price: 15000000,
+    price: ,
     category: 'custom-furniture',
     images: ['/products/wardrobe-1.jpg'],
     specs: ['Ukuran: Sesuai Pesanan', 'Bahan: Multiplek + HPL', 'Finishing: Duco/HPL', 'Waktu Pengerjaan: 2-3 Minggu']
   },
   {
     id: '4',
-    name: 'Kitchen Set Modern',
-    description: 'Kitchen set dengan desain modern dan fungsional, dilengkapi storage optimal.',
-    price: 25000000,
+    name: 'Modern private residence',
+    description: 'Ruangan set dengan desain modern, dilengkapi storage optimal.',
+    price:,
     category: 'custom-furniture',
-    images: ['/products/kitchen-1.jpg'],
+    images: ['/tiga.jpg'],
     specs: ['Ukuran: Sesuai Ruangan', 'Bahan: Multiplek + Granite', 'Fitur: Soft Close', 'Waktu Pengerjaan: 3-4 Minggu']
   },
   {
