@@ -142,16 +142,16 @@ export const DUMMY_PRODUCTS: Product[] = [
   },
   {
     id: '5',
-    name: 'Renovasi Kamar Mandi',
-    description: 'Paket renovasi kamar mandi lengkap dengan desain modern dan material berkualitas.',
-    price: 35000000,
+    name: 'Renovasi Kamar ruangan',
+    description: 'Paket renovasi kamar.',
+    price: 0,
     category: 'custom',
     images: ['empat.jpg'],
-    specs: ['Luas: Up to 6 m²', 'Termasuk: Material + Jasa', 'Desain: 3D Render', 'Waktu Pengerjaan: 2-3 Minggu']
+    specs: ['Luas: Up to 6 m²', 'Termasuk: Material + Jasa', 'Desain: 3D Render',]
   },
   {
     id: '6',
-    name: 'Konstruksi Rumah Type 45',
+    name: 'renof tuangan megah',
     description: 'Paket pembangunan rumah type 45 dengan desain modern minimalis.',
     price: 0,
     category: 'custom-house',
