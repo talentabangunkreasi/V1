@@ -36,8 +36,8 @@ export const viewport: Viewport = {
   ],
   width: 'device-width',
   initialScale: 1,
-  maximumScale: 1, // Dikunci ke 1 biar ga bisa zoom in otomatis/liar
-  userScalable: false, // Dikunci false biar ga bisa dicubit goyang-goyang di HP
+  maximumScale: 1, 
+  userScalable: false,
 }
 
 export default function RootLayout({
